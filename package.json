@@ -1,0 +1,18 @@
+{
+  "name": "verificar-cuit-ar",
+  "version": "1.0.0",
+  "description": "Funcion para validar si el cuit es correcto. Valido para argentina.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cuit",
+    "validator",
+    "validador",
+    "argentina",
+    "afip"
+  ],
+  "author": "Javier Retondo",
+  "license": "MIT"
+}
