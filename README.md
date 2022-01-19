@@ -62,7 +62,7 @@ if (verificar.isCuit) {
 }
 ```
 
-Respuestas de la función:
+Respuesta de la función:
 ```
 return {
         isCuit: false | true,
