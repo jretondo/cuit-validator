@@ -1,7 +1,7 @@
 const tipos = [20, 23, 24, 25, 26, 27, 30, 33, 34]
 const valMult = [5, 4, 3, 2, 7, 6, 5, 4, 3, 2]
 
-export function verificadorCuit(cuit) {
+module.exports = function verificadorCuit(cuit) {
     const numVerif = cuit.substring(0, 10)
     const tipoCuit = cuit.substring(0, 2)
     const digVer = parseInt(cuit.substring(10, 11))
@@ -46,18 +46,4 @@ export function verificadorCuit(cuit) {
             }
         }
     }
-}
-
-const cuit = 20999999961
-const verificar = verificadorCuit(cuit)
-
-if (verificar.isCuit) {
-    //Es un número de CUIT válido
-} else {
-    //No es un número de CUIT válido
-    //Ver los córdigos de error
-
-    //1 Código verificador no corresponde al número (el calculo del último digito).
-    //2 El CUIT no tiene los 11 digitos.
-    //3 El tipo de CUIT no éxiste. (los primero dos digitos)
 }
